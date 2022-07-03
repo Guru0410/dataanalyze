@@ -1,0 +1,124 @@
+$color-teal: #17A2B8;
+$color-primary: #3046C5;
+$color-secondary: #5637dd;
+$color-pale: #CEC8FF;
+$color-mid: #901CAD;
+$color-dark: #60106b;
+$color-black-transparent: rgba(0, 0, 0, 0.5);
+$color-search: #9ca3af;
+$color-search-border: #d1d5db;
+
+$body-font: "Open Sans", sans-serif;
+$header-font: "Lobster", cursive;
+
+
+body {
+    font-family: $body-font;
+}
+
+h1, h2, h3 {
+    font-family: $header-font;
+}
+
+h2 {
+    color: blue;
+}
+
+navtext {
+    color: black;
+    font-weight: bold;
+}
+
+header { 
+    h2 {
+    color: $color-pale;
+    }
+}
+
+.site-footer {
+    background-image: linear-gradient($color-pale, white);
+    padding: 20px 0;
+}
+
+.jumbotron {
+    margin: 0;
+    padding: 30px;
+    background-image: linear-gradient(to right, $color-secondary, $color-primary, $color-dark);
+    color: white;
+}
+
+.row-content {
+    padding: 50px 0;
+    border: 1px ridge;
+    min-height: 20px;
+}
+
+.navbar {
+    background-color: $color-mid;
+}
+
+.tab-content {
+    border: 1px solid #DDD;
+    border-top: none;
+    padding: 10px;
+}
+
+.carousel-caption {
+    background-color: $color-black-transparent;
+}
+
+.carousel {
+    border: solid $color-secondary
+}
+
+#carouselButton {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+}
+
+.height {
+    min-height: 30vh;
+}
+
+.text-responsive {
+    font-size: calc(30% + 0.5vw + 0.5vh);
+  }
+
+.text-responsive-header {
+    font-size: calc(50% + 0.5vw + 0.5vh);
+  }
+.form {
+    position: relative;
+    .fa-search {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        color: $color-search
+    }
+    span{
+        position: absolute;
+        right: 17px;
+        top: 13px;
+        padding: 2px;
+        border-left: 1px solid $color-search-border;
+    }
+
+    .left-pan{
+        padding-left: 7px;
+    }
+    
+    .left-pan i{
+       
+       padding-left: 10px;
+    }
+    
+    .form-input{
+    
+        min-height: 55px;
+        text-indent: 33px;
+        border-radius: 10px;
+    }
+}
+
